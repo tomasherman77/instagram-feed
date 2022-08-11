@@ -1,10 +1,46 @@
+body {
+  background: grey;
+  margin: 0;
+}
+.header {
+  background: white;
+  display:flex;
+  justify-content: center;
+  margin: 0;
+}
+.feed{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
 .post {
-    display: grid;
-    grid-template-columns: 500px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    background: white;
+    align-items: center;
+    width: 500px;
+    margin-top: 20px;
   }
 .post-header{
     display: flex;
-    gap: 300px;
     align-items: baseline;
+}
+.post-header h2 {
+  margin-right: 250px;
+}
+.caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  align-items: center;
+}
+
+.caption p {
+  padding:10px
+}
+
+.icons {
+  align-self: flex-start
 }
